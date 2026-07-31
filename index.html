@@ -989,7 +989,7 @@ contactForm.addEventListener('submit', function(e){
   const formData = new FormData(contactForm);
   const data = Object.fromEntries(formData.entries());
 
-  fetch('/.netlify/functions/send-to-telegram', {
+  fetch('https://adorable-wisp-968087.netlify.app/.netlify/functions/send-to-telegram', {
     method: 'POST',
     body: JSON.stringify(data)
   })
